@@ -1,0 +1,19 @@
+section {
+    border:3px solid black ;
+    display: flex;
+/**Def axe ppal**/
+    flex-direction: row;
+    /**Def axe ppal**/
+    height: 600px;
+    /**Def axe sec**/
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+/*les contenus*/
+section article{
+    border: 3px solid orange;
+    flex-basis: 30%;
+    margin: 20px 0;
+    padding: 20px;
+}

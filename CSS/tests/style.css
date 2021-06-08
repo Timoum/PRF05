@@ -1,0 +1,32 @@
+/*Selection par type  */
+h1,
+h2 {
+  background-color: red;
+}
+p {
+  color: rgb(156, 161, 156);
+}
+header p {
+  color: blue;
+}
+main {
+  color: rgb(128, 0, 90);
+}
+/*le caractere >permetde preciser que lon selectionne tous les enfants directset non pas tous les descendants  */
+main > p {
+  color: green;
+}
+footer p {
+  color: rgb(111, 0, 255);
+}
+.underline{
+  border-bottom:10px solid black;
+}
+#first-news {
+  font-size: 2en;
+  color: blueviolet;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 20px;
+}
