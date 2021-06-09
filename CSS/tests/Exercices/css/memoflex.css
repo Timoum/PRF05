@@ -144,12 +144,12 @@ footer {
 .pied{
   margin-bottom: 10px;
 }
-footer h4 {
+footer h3 {
   text-align: center;
   margin: 20px 0;
 
 }
-footer h4 a:hover {
+footer h3 a:hover {
   color: #0c0d0f;
  
 }
@@ -161,10 +161,10 @@ footer nav ul li:hover {
   color: #121414;
 }
 
-address h4 {
+address h3 {
   text-align: center;
 }
-address h4 a{
+address h3 a{
   color: darkblue;
 }
 
