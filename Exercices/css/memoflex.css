@@ -1,0 +1,287 @@
+/****************  GENERAL *************************** */
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding-left: 10px;
+}
+/* ***************    Header ************************ */
+header {
+  background-color: #6c757d;
+  text-align: center;
+  height: 15vh;
+}
+img {
+  height: 14vh;
+}
+.img2 {
+  display: none;
+}
+.wrapper-logo-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: -40px;
+}
+.icon-torso:before {
+  color: rgb(14, 206, 14);
+  font-size: 2rem;
+}
+
+/* ****************      NAV   ********************** */
+.smart {
+  display: none;
+  color: black;
+}
+
+nav div ul {
+  margin: 0px;
+  display: flex;
+
+  /**par defaut dejà row**/
+  flex-direction: row;
+
+  /**futurs els menus iront à la ligne automatiquement**/
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: flex-start;
+}
+
+li {
+  padding: 10px;
+}
+
+ul li button {
+  height: 30px;
+}
+ul li button:active {
+  color: darkorange;
+}
+.btng {
+  background-color: #767d85;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btng:hover {
+  background-color: rgb(90, 89, 88);
+  cursor: pointer;
+}
+.btng:active {
+  background-color: darkorange;
+  color: #c5cfe4;
+  cursor: pointer;
+}
+
+/*******************  MAIN   ************************ */
+
+main {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 5% 5% 5% 5%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-content: center;
+}
+
+main section {
+  flex-basis: 20%;
+  padding-left: 10px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article {
+  background-color: #6c757d;
+  color: #ffffff;
+  font-size: 1.2rem;
+  height: 200px;
+  border-radius: 5px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 30px 10px;
+}
+
+.title3 {
+  padding-bottom: 30px;
+}
+
+/*************************** Gestion Fontello  **************** */
+
+.icon-left-circle {
+  float: left;
+  cursor: pointer;
+}
+.icon-left-circle:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.icon-right-circle {
+  float: right;
+  cursor: pointer;
+}
+.icon-right-circle:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.icon-cog {
+  float: inline-end;
+  cursor: pointer;
+}
+.icon-cog:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/**************    Gestion Boutons Réponse   ********** */
+
+article button {
+  background-color: #eec40b;
+  border: 2px solid #eec40b;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.btn-answer:hover {
+  background-color: #b99803;
+  border: 4px solid #b99803;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-answer:active {
+  background-color: darkorange;
+  border: 4px solid darkorange;
+  border-radius: 5px;
+}
+.btnv {
+  background-color: rgb(14, 206, 14);
+  color: #ffffff;
+  width: 24px;
+  height: 28px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.btnv:hover {
+  background-color: rgb(40, 163, 27);
+  color: #ffffff;
+  width: 24px;
+  height: 28px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn {
+  text-align: center;
+}
+/*********************    Footer *********************** */
+footer {
+  background-color: #8b9399;
+  color: #ffffff;
+  overflow: auto;
+}
+.pied {
+  margin-bottom: 10px;
+}
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+footer h3 a:hover {
+  opacity: 0.5;
+}
+
+footer nav ul li:hover {
+  background: rgb(248, 246, 246);
+  border-radius: 8px;
+  opacity: 0.9;
+}
+footer nav ul li a:hover {
+  color: #959599;
+}
+
+address h3 {
+  text-align: center;
+}
+address h3 a {
+  color: darkblue;
+}
+
+.over :hover {
+  text-decoration: underline;
+  opacity: 0.5;
+}
+
+/********************   Media Queries **********/
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+  }
+  .desk {
+    display: none;
+  }
+
+  /* nav ul {
+    margin: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 80vw;
+    margin: auto;
+  } */
+  .menumob {
+    text-align: center;
+    width: 320px;
+    height: 70vh;
+    background-color: red;
+    top: O;
+    right: 0%;
+  }
+  .hamb {
+    margin: 10px 10px 10px 10px;
+  }
+
+  .img2 {
+    display: inline;
+    width: 6vh;
+    height: 8vh;
+    float: right;
+    padding: 10 10 10 10;
+  }
+  .smart {
+    display: flex;
+    flex-direction: column;
+  }
+  .link {
+    color: black;
+    text-decoration: underline;
+    list-style-type: square;
+  }
+
+  .pied {
+    max-width: 100vw;
+  }
+  #maskf {
+    display: none;
+  }
+}

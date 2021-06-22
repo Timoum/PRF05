@@ -1,0 +1,54 @@
+/* import d'une police google */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+body {
+  margin: 0;
+  background-image: url(./images/foret.jpg);
+  font-family: "Roboto", sans-serif, arial;
+}
+h1 {
+  font-size: 2.5rem; /* 2.5 x 16 = 40px */
+  margin: 15px 0 10px 0; /* haut, droite, bas, gauche */
+  text-align: center;
+}
+h2 {
+  font-size: 1.8rem;
+  margin: 15px 0 10px 15px;
+}
+h3 {
+  font-size: 1.3rem;
+  margin: 15px 0 10px 0;
+}
+
+/* Faire en sorte que l'image ne fasse pas plus en largeur que son 
+container */
+img {
+  max-width: 100%;
+}
+
+.col-4 {
+  float: left;
+  width: 33.33333333%;
+}
+.col-4 div {
+  /* Propriétés de boîte */
+  padding: 5%;
+  border: 1px solid black;
+  margin: 3%;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px grey;
+  background-color: #dddddd;
+}
+
+main {
+}
+main:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+span {
+  border: 1px solid black;
+  display: block;
+}
