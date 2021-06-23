@@ -8,6 +8,8 @@ if(i> 0.5){
     console.logi( `i est inferieur ou égal à 0.5`)
 }
 */
+
+/*
 //condition
 const p1 = {
     name: "bob",
@@ -18,6 +20,4 @@ if (p1 == p2){
 } else {
     console.log('p1 n\'est pas egal à p2');
 }
-
-
-
+*/
