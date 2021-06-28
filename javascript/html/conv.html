@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>convertisseur</title>
+    <title>conv</title>
     <link rel="stylesheet" href="../CSS/convertisseur.css" />
   </head>
   <body>
@@ -12,17 +12,22 @@
         <legend>CONVERTISSEUR EUROS / FRANCS SUISSE</legend>
         <br />
 
-        <form method="post" action="xxxxx.php" id="form-convert">
+        <form
+          method="post"
+          action="xxxxx.php"
+          id="form-convert"
+          oninput="document.getElementById('euro,chf').innerHTML='Vous avez saisi un montant à convertir'"
+        >
           <input
             type="number"
             oninput="document.getElementById('euro')"
             name="euro"
             id="euro"
-            required="required"
+            placeholder="montant en €"
+            required = "required"
             value="0"
             step="0.01"
             min="0"
-            placeholder="montant en €"
           />
           <label for="euro">€</label>
 
@@ -45,7 +50,7 @@
           <input type="submit" value="Convertir" id="submit" />
         </form>
       </fieldset>
-    </pan>
-    <script src="../js/convertisseur.js"></script>
+    </span>
+    <script src="../js/conv.js"></script>
   </body>
 </html>
