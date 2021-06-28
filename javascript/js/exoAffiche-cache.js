@@ -21,5 +21,5 @@ h1.onclick = function () {
     //p.hidden = !p.hidden;
   };
  
-;
+
   
