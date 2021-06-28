@@ -12,10 +12,16 @@ récupérer les données provenant d'un champ de formulaire (value)
 modifier les données d'un champ de formulaire (affectation =)**/
 //Declaration variables euro
 
-const euro = euro;
-const chf = chf;
+const input_euro = document.getElementById(euro);
+const input_chf = document.getElementById(chf);
 
-// Gestion de l'événement de soumission duformulaire
+input_euro.addEventListener("input", function () {
+  convertir(this.id, this.value);
+});
+input_chf.addEventListener("input", function () {
+  chf(this.id, this.value);
+});
+
 form.onsubmit = function (e) {
   // supression du rechargement de la page
 
@@ -28,7 +34,7 @@ form.onsubmit = function (e) {
   document.getElementById("euro"); document.getElementById("submit").innerHTML =
   "Vous avez saisi un montant à convertir" + euro;*/
   }
-  function convert(value, currency) {
+  function convertir(value, currency) {
     let result = 0;
     if (currency == "euro") {
       result = value / 1.09;
