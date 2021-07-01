@@ -1,50 +1,26 @@
-/*const form = document.querySelector("form");
-const input_euro = document.getElementById("euro");
-const input_chf = document.getElementById("chf");
+jQuery(function ($) {
+  //Déclaration des constantes, Affectation des entrées
+  const form = $("form");
+  const euro = $("#euro");
+  const chf = $("#chf");
 
-// Gestion des événements
-form.onsubmit = function (e) {
-  e.preventDefault();
-};
-input_euro.oninput = function (e) {
-  input_chf.value = input_euro.value / 1.06;
-};
-input_chf.oninput = function (e) {
-  input_euro.value = input_chf.value * 1.06;
-};
+  // Gestion de l'événement de soumission des entrées
+  // supression du rechargement de la page
+  form.on("click", function (e) {
+    e.preventDefault();
 
-*/
+    //initialisation avant la saisie
+    euro.val("");
+    chf.val("");
 
-jQuery(function($){
+    //gestion conversion à l'entrée euros
+    euro.on("input", function () {
+      chf.val(euro.val() / 1.09);
+    });
 
- //recuperation input
-
- let euro = $("#euro")
- let chf = $("#chf")
- console.log('euro :', euro);
-
-//ajouter les gestionnaire d'evenement input
- 
- euro.on function ("input",function ()) {
- input.val 
-
- 
- };
-  
-
-
-
-
-
-
+    //Gestion Conversion à l'entrée chf
+    chf.on("input", function () {
+      euro.val(chf.val() * 1.09);
+    });
+  });
 });
-
-
-
-
-
-
-
-
-
-

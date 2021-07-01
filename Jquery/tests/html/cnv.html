@@ -3,24 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Convertisseur jquery</title>
+    <title>Convertisseur</title>
     <script src="../../jquery-3.6.0.js"></script>
-    <script src="../js/conv.js"></script>
+    <script src="../js/cnv.js"></script>
+
   </head>
   <body>
-    <form>
-      <fieldset>
-        <legend>CONVERTISSEUR</legend>
-        <label for="euro">Euro&nbsp;&nbsp;</label>
+    <form id="form">
+      <br>
+      <fieldset><legend>CONVERTISSEUR</legend>
+        
+        <label for="euro"> Euro &nbsp;</label>
+        
         <input
           type="number"
           id="euro"
           step="0.01"
           minimum="0"
           placeholder="Montant en euro"
-        />
-        <br /><br />
-        <label for="chf">CHF&nbsp;&nbsp;</label>
+        /> <br>  <br> <br>
+        <label for="chf"> chf &nbsp;&nbsp;&nbsp;</label>
         <input
           type="number"
           id="chf"
@@ -29,6 +31,8 @@
           placeholder="Montant en francs suisse "
         />
       </fieldset>
+      
     </form>
+    
   </body>
 </html>
