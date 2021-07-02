@@ -3,7 +3,8 @@ console.log('nom :',pnom);
 const bouton = document.getElementById("btn");
 console.log('bouton :',bouton);
 
-pnom.onchange = () => {
+pnom.onclick = () => {
+    
     console.log(`choix prenom : `, pnom);
   
     // récupération des données qui correspondent au département cliqué
@@ -22,10 +23,6 @@ pnom.onchange = () => {
       })
       .catch((error) => {
         console.error(`erreur : `, error.message);
-      })
-      .then(function (result) {
-        // result (le résultat au format texte)
-        // par ex, on l’intègre brut dans la page
-        document.getElementById('data').innerHTML = result;
+      
       })
   };
