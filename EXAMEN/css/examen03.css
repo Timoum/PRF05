@@ -1,3 +1,42 @@
 body {
-    background-color: burlywood;
+  background-color: burlywood;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  width: 100vw;
+  height: 100hw;
+}
+.field {
+  background-color: rgb(245, 239, 239);
+  width: 32vw;
+  height: 32vh;
+  padding: 15px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+fieldset {
+  width: 29vw;
+  height: 28vh;
+  border-radius: 8px;
+}
+
+.btn {
+  padding-top: 40px;
+}
+.div {
+  background-color: rgb(245, 239, 239);
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 32vw;
+  height: 26vh;
+
+  padding-left: 20px;
+  margin: auto;
+}
+
+#data {
+  text-align: center;
 }

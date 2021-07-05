@@ -232,6 +232,37 @@ address h3 a {
 }
 
 /********************   Media Queries **********/
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .menumob {
+    text-align: center;
+    width: 50vw;
+    height: 70vh;
+    background-color: red;
+    top: O;
+    right: 0%;
+  }
+  .hamb {
+    margin: 10px 10px 10px 10px;
+  }
+
+  .img2 {
+    display: inline;
+    width: 6vh;
+    height: 8vh;
+    float: right;
+    padding: 10 10 10 10;
+  }
+  .smart {
+    display: flex;
+    flex-direction: column;
+  }
+  .link {
+    color: black;
+    text-decoration: underline;
+    list-style-type: square;
+  }
+}
+
 @media screen and (max-width: 768px) {
   main {
     display: flex;
@@ -249,6 +280,10 @@ address h3 a {
     max-width: 80vw;
     margin: auto;
   } */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles pour cette Media Queries */
   .menumob {
     text-align: center;
     width: 320px;
@@ -276,6 +311,16 @@ address h3 a {
     color: black;
     text-decoration: underline;
     list-style-type: square;
+  }
+
+  main section {
+    flex-basis: 20%;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .pied {
