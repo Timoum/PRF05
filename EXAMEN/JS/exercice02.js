@@ -13,7 +13,7 @@ console.log(`dev Back ;`, fd);
 let back_l = document.getElementById("lbe");
 console.log(`hello :,`, lbe);
 
-// masquage onglets front et back dev
+//initialisation, masquage onglets front et back dev
 lfront.hidden = true;
 back_l.hidden = true;
 

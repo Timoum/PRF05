@@ -12,8 +12,10 @@ btn.hidden = false;
 // disparition de la section.
 
 btn.onclick = function (){
-    if (p.hidden) p.hidden = false;
-    else btn.hidden = true;
+   // if (p.hidden) p.hidden = false;
+   // else btn.hidden = true;
+   p.hidden = false;
+   btn.hidden = true;
 }
 
 
